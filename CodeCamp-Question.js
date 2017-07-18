@@ -11,6 +11,15 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
 
+        var lc = question.toLowerCase();
+        var response = "Sorry, it has been so long since I was alive.";
+
+        if (lc.includes("favorite") && lc.includes("color")) {
+            response = "Black the same color as everything else in my lfe.";
+        }
+
+
+
         Slack.postMessageToChannel(channelName, "Question received.");
 
         // *********************************************************************
