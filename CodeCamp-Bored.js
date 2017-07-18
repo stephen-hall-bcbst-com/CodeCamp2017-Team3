@@ -2,8 +2,8 @@
 
 module.exports = {
     settings: {
-        enabled: false,
-        timeoutInSeconds: 15,
+        enabled: true,
+        timeoutInSeconds: 100,
     },
 
     /**
