@@ -18,6 +18,9 @@ module.exports = {
             response = "Black the same color as everything else in my lfe.";
         }
 
+        Slack.postMessageToChannel(channelName, response);
+
+
 
 
         Slack.postMessageToChannel(channelName, "Question received.");
