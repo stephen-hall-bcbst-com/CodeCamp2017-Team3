@@ -27,7 +27,7 @@ module.exports = {
 
 
         if (lc.includes("coding") && lc.includes("competition")) {
-            response = "Team Stylish T-Shirts of course!";
+            response = "Team Stylish T-shirts of course!";
         }
         else { response = "Sorry, it has been so long since I was alive.";}
 
