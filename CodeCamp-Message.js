@@ -26,6 +26,10 @@ module.exports = {
         if (c.includes('+')) {
             response = "Get a calculator";
         }
+
+        if (c.includes('hello')) {
+            response = "hi";
+        }
         Slack.postMessageToChannel(channelName, response);
 
         
