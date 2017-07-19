@@ -45,21 +45,14 @@ module.exports = {
        // }
        // console.log(add(onedashtwentyfive, onetotwentyfive));
 
-       var arra = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
-       var arrb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+       // var arra = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+       // var arrb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
        
     
 
-    var sum = arra.map(function(num, idx) {
-        return num + arrb[idx];
-    });
-    /* function addNumbers();
-    values.reduce(function(arra,arrb)
-    {return arra+arrb})*/
-       
+   
 
 
-    Slack.postMessageToChannel(channelName, sum);
     Slack.postMessageToChannel(channelName, response);
         // *********************************************************************
         // STOP CODING!
