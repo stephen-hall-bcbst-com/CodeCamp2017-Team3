@@ -11,9 +11,24 @@ module.exports = {
         // *********************************************************************
         // CODE HERE!
         // *********************************************************************
+       var response;
+        Slack.postMessageToChannel(channelName, "You said something?");
+         var c = message.tolowercase();
 
-        Slack.postMessageToChannel(channelName, 'Message received.');
+        if (c.includes('music')); {
+            response = "look up the first daredevil movie's soundtrack"
+        }
 
+        if (c.includes('clothing')) {
+            response = "I like dark colors,makes it harder for people to see me.";
+        }
+
+        if (c.includes('+')) {
+            response = "Get a calculator";
+        }
+        Slack.postMessageToChannel(channelName, response);
+
+        
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
