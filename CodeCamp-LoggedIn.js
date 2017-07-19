@@ -17,13 +17,13 @@ module.exports = {
         if (newState == -1) {
             Slack.postMessageToChannel(channel, "Ask me questions like, who will win this competition or what is my life story. ");
         }
-    }, 300);
+    }, 100);
         
          setTimeout(function() {
         if (newState == -1) {
             Slack.postMessageToChannel(channel, "I can even tell you some jokes!");
         }
-    }, 300);
+    }, 100);
 
         // *********************************************************************
         // STOP CODING!
