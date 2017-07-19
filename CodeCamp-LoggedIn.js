@@ -14,11 +14,11 @@ module.exports = {
 
         setTimeout(function() {
                 Slack.postMessageToChannel(channel, "Ask me questions like, who will win this competition or what is my life story. ");
-        }, 1000);
+        }, 2000);
             
         setTimeout(function() {
                 Slack.postMessageToChannel(channel, "I can even tell you some jokes!");
-        }, 2000);
+        }, 4000);
 
         // *********************************************************************
         // STOP CODING!
