@@ -56,7 +56,7 @@ module.exports = {
        // }
        // console.log(add(onedashtwentyfive, onetotwentyfive));
 
-       var message = lc.replace('?', ' ');
+       var message = lc.replace('?', '');
        var array1 = message.split(" ");
 
        if (array1.length==3) { // checking proper length of input
