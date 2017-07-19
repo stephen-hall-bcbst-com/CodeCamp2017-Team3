@@ -12,7 +12,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
        var response;
-        Slack.postMessageToChannel(channelName, "Understandable have a nice day");
+        Slack.postMessageToChannel(channelName, "You said something?");
          var c = message.tolowercase();
 
         Slack.postMessageToChannel(channelName, 'Understandable have a nice day.');
