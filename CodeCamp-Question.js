@@ -22,7 +22,7 @@ module.exports = {
                             'my life',
                             'my grades',
                             'I changed my password to "incorrect". So when I got it wrong the computer would say "your password is incorrect".',
-                            'At what age would it be appropiate to tell it, it was adopted',
+                            'At what age would it be appropiate to tell my dog, it was adopted',
         ];
 
         var random = Math.floor((Math.random() * 7));
