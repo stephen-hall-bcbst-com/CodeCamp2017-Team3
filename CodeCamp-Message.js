@@ -12,10 +12,10 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
        var response;
-        Slack.postMessageToChannel(channelName, "You said something?");
+        Slack.postMessageToChannel(channelName, 'Understandable have a nice day.');
          var c = message.tolowercase();
 
-        Slack.postMessageToChannel(channelName, 'Understandable have a nice day.');
+        Slack.postMessageToChannel(channelName, 
 
         if (c.includes('clothing')) {
             response = "I like dark colors,makes it harder for people to see me.";
