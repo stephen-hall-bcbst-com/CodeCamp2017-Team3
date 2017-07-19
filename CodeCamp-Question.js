@@ -50,9 +50,17 @@ module.exports = {
        // }
        // console.log(add(onedashtwentyfive, onetotwentyfive));
 
-       // var arra = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
-       // var arrb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+       var array1 = lc.split(" ");
 
+       if (array1.length==3) { // checking proper length of input
+           // checking input
+           if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2])) {
+               // checking plus sign
+                if (array1[1]=='+' || array1[1]=='plus') {
+                    response = array1[0] + array1[2];
+                }
+           }
+       }
 
     Slack.postMessageToChannel(channelName, response);
         // *********************************************************************
