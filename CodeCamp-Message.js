@@ -16,7 +16,7 @@ module.exports = {
          var c = message.tolowercase();
 
         if (c.includes('music')); {
-            response = "look up the first daredevil movie's soundtrack"
+            response = "look up the first daredevil movie's soundtrack";
         }
 
         if (c.includes('clothing')) {
