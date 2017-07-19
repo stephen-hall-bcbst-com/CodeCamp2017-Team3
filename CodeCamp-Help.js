@@ -14,7 +14,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
          var response;    
-        Slack.postMessageToChannel(channelName, 'What is your problem this time child.');
+        Slack.postMessageToChannel(channelName, 'Do you need emotional support?');
          var lc = message.toLowerCase();
     
         if (lc.includes('can I get some help?')) { 
