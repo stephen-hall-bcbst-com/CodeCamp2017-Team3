@@ -23,9 +23,15 @@ module.exports = {
                             'my grades',
                             'I changed my password to "incorrect". So when I got it wrong the computer would say "your password is incorrect".',
                             'At what age would it be appropiate to tell my dog, it was adopted',
+                            'What do you call a fake noodle? An impasta',
+                            'What do you call a alligator in a vest? An investigator',
+                            'What is the difference inbetween a fish and a guitar? You can not tuna fish',
+                            'How many tickles does it take to make a octopus laugh? TEN-Tickles',
+                            'What do you call a pile of kittens? A meowtain',
+                            'Why did the picture go to jail? Because it was framed',
         ];
 
-        var random = Math.floor((Math.random() * 7));
+        var random = Math.floor((Math.random() * 13));
 
         // Favorite color response
         if (lc.includes("favorite") && lc.includes("color")) {
