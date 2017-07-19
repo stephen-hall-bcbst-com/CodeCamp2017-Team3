@@ -62,13 +62,12 @@ module.exports = {
        if (array1.length == 3) { // checking proper length of input
            // checking input
            response = "input is three long";
-           Slack.postMessageToChannel(channelName, response);
            if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2])) {
                // checking plus sign
                response = "the numbers exist";
                 if (array1[1]=='+' || array1[1]=='plus') {
                     response = "this should work";
-                    // response = array1[0] + array1[2];
+                    response = array1[0] + array1[2];
                 }
            }
        }
