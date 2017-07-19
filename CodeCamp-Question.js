@@ -77,6 +77,10 @@ module.exports = {
            }
        }
 
+       if (response == "NaN") {
+           response = "Do not make my life any more miserable";
+       } 
+
     Slack.postMessageToChannel(channelName, response);
         // *********************************************************************
         // STOP CODING!
