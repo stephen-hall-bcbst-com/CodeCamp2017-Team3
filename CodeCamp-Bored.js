@@ -15,6 +15,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
 
+        // random response
         var replies = ['It is very lonely behind the screen, you know',
                        'I need attention',
                        'Are you going to leave me too?',
@@ -23,6 +24,7 @@ module.exports = {
         var random = Math.floor((Math.random() * 5));
         var response = replies[random];
         Slack.postMessageToChannel(channel, response);
+
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
