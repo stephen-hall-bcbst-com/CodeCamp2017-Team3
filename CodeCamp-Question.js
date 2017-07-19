@@ -63,11 +63,17 @@ module.exports = {
            // checking input
            if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2])) {
                // checking plus sign
+                var num1 = parseInt(array1[0]);
+                var num2 = parseInt(array1[2]);
                 if (array1[1]=='+' || array1[1]=='plus') {
-                    var num1 = parseInt(array1[0]);
-                    var num2 = parseInt(array1[2]);
                     response = num1 + num2;
-                }
+                } else if (array1[1]=='-' || array1[1]=='minus') {
+                    response = num1 - num2;
+                } else if (array1[1]=='*' || array1[1]=='x') {
+                    response = num1 * num2;
+                } else if (array1[1]=='/') {
+                    response = num1 / num2;
+                } 
            }
        }
 
