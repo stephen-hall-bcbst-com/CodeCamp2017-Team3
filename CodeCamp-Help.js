@@ -13,7 +13,8 @@ module.exports = {
         // *********************************************************************
 
         Slack.postMessageToChannel(channelName, 'What is your problem this time child.');
-if (c.includes('who is the leader')) {response = {"Cartoos is ultimate leader"};
+if (c.includes('can i get some help?')) {response = {"Do you need emotional support?";
+}
 
         // *********************************************************************
         // STOP CODING!
