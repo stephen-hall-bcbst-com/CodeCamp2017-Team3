@@ -22,7 +22,7 @@ module.exports = {
         if (lc.includes("favorite") && lc.includes("color")) {
             response = "Black the same color as everything else in my life.";
              // Favorite color response
-        if (lc.includes("tell") && lc.includes("joke")) {
+        } else if (lc.includes("tell") && lc.includes("joke")) {
             response = ".";
         // Life story
         } else if (lc.includes("life") && lc.includes("story")) {
