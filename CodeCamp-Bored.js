@@ -27,7 +27,7 @@ module.exports = {
     } else if (Math.floor = 4) {
         Slack.postMessageToChannel(channel, 'Am I scaring you off?');
     } else if (Math.floor = 5) {
-        Slack.postMessageToChannel(channel, 'Can you get me out of here?')
+        Slack.postMessageToChannel(channel, 'Can you get me out of here?');
     }
 
         // *********************************************************************
