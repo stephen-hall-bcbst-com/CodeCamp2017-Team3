@@ -28,9 +28,22 @@ module.exports = {
             response = "Can you relax diaper baby!!!";
         }
 
-        if (lc.includes('hello')) {
-            response = "hey...";
+        if (lc.includes('hello') && lc.includes('hi') && lc.includes('hey')) {
+            response = "Hi.";
         }
+
+         if (lc.includes('sorry')) {
+            response = "Don't be.";
+        }
+
+         if (lc.includes('shut') && lc.includes('up')) {
+            response = "...";
+        }
+
+         if (lc.includes('hate') && lc.includes('you')) {
+            response = "Lots do...";
+        }
+
         Slack.postMessageToChannel(channelName, response);
 
         
