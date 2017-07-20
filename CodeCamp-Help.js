@@ -14,6 +14,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
          var response;    
+        
          var lc = message.toLowerCase();
     
         if (lc.includes('help me')) { 
@@ -24,12 +25,12 @@ module.exports = {
         // math help
         } else if (lc.includes("math") && lc.includes("help")) {
             response = "you can always ask me math questions in this format: _ + _?";
-
+         } 
+    Slack.postMessageToChannel(channelName, 'Do you need emotional support?');
     Slack.postMessageToChannel(channelName, response);
 
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
-        }    
-    },
-};
+        },    
+    };
