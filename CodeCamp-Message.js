@@ -11,18 +11,17 @@ module.exports = {
         // *********************************************************************
         // CODE HERE!
         // *********************************************************************
-       var response;
-       var memory = require('./CodeCampy-Memory');
+       var response = "You said something?";
+       var memory = require('./CodeCamp-Memory');
        
-        Slack.postMessageToChannel(channelName, "You said something?");
-         var lc = message.tolowercase();
+         var lc = message.toLowerCase();
          var Uc = message.toUpperCase();
-        if (memory.lastQuestion == 'name') {
+        /* if (memory.lastQuestion == 'name') {
             memory.theBrain.name = message;
             memory.lastQuestion = '';
         }
-        
-        if (lc.includes('music')); {
+        */
+        if (lc.includes('music')) {
             response = "look up the first daredevil movie's soundtrack";
         }
 
@@ -34,11 +33,7 @@ module.exports = {
             response = "Can you relax diaper baby!!!";
         }
 
-<<<<<<< HEAD
-        if (lc.includes('hello')) {
-=======
-        if (lc.includes('hello') && lc.includes('hi') && lc.includes('hey')); {
->>>>>>> 1cc2c1a8ee70a793861ab160eedcbb3f35e54b65
+        if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
             response = "hey..." + memory.theBrain.name;
         }
 
