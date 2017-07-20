@@ -36,10 +36,10 @@ module.exports = {
         // Favorite color response
         if (lc.includes("favorite") && lc.includes("color")) {
             response = "Black the same color as everything else in my life.";
-            // pi
+        // pi
         } else if (lc.includes("what") && lc.includes("pi")) {
             response = "3.14159265358979323846264338327950288419716939937510...";
-             // joke
+        // joke
         } else if (lc.includes("tell") && lc.includes("joke")) {
             response = jokesarray[random];
         // Life story
@@ -48,9 +48,12 @@ module.exports = {
         // coding competition
         } else if (lc.includes("coding") && lc.includes("competition")) {
             response = "Team Stylish T-Shirts of course! (I am being forced to say this by my creator)";
-            // how are you
+        // how are you
         } else if (lc.includes("how") && lc.includes("you")) {
             response = "An empty shell of the man I once was.";
+        // why answer
+        } else if (lc.includes("why")) {
+            response = "Why bother";
         // default
         } else { 
             response = "actually when I think about it I can not remember.";
