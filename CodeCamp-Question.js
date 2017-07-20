@@ -94,10 +94,10 @@ module.exports = {
            response = "Do not make my life any more miserable";
        } else { 
             response = "actually when I think about it I can not remember.";
-        }
+       }
 
 
-       Slack.postMessageToChannel(channelName, response);
+        Slack.postMessageToChannel(channelName, response);
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
