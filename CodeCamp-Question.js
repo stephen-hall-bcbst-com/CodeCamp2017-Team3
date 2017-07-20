@@ -32,6 +32,8 @@ module.exports = {
         ];
 
         var random = Math.floor((Math.random() * 13));
+        var message = lc.replace('?', '');
+        var array1 = message.split(" ");
 
         // Favorite color response
         if (lc.includes("favorite") && lc.includes("color")) {
@@ -61,17 +63,7 @@ module.exports = {
         } else if (lc.includes("favorite") && lc.includes("game")) {
             response = "An empty shell of the man I once was.";
         // default
-        } else { 
-            response = "actually when I think about it I can not remember.";
-        }
-        
-
-     
-
-       var message = lc.replace('?', '');
-       var array1 = message.split(" ");
-
-       if (array1.length == 3) { // checking proper length of input
+        } else if (array1.length == 3) { // checking proper length of input
            // checking input
            if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2])) {
                // checking plus sign
@@ -94,15 +86,19 @@ module.exports = {
                         }
                     }
                     response = result;
+                    if (num1 == 0 && num2 == 0) {
+                        response = "Why do you waste my time with this?";
+                    }
                 }
-           }
-       }
-       // NaN to different answer
-       if (response.toString() == "NaN") {
+           } // NaN to different answer 
+       } else if (response.toString() == "NaN") {
            response = "Do not make my life any more miserable";
-       } 
+       } else { 
+            response = "actually when I think about it I can not remember.";
+       }
 
-       Slack.postMessageToChannel(channelName, response);
+
+        Slack.postMessageToChannel(channelName, response);
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
