@@ -13,20 +13,31 @@ module.exports = {
         // *********************************************************************
        var response;
         Slack.postMessageToChannel(channelName, "You said something?");
-         var c = message.tolowercase();
+         var lc = message.tolowercase();
+         var Uc = message.toUpperCase();
 
-        Slack.postMessageToChannel(channelName, 'Understandable have a nice day.');
+        if (lc.includes('music')); {
+            response = "look up the first daredevil movie's soundtrack";
+        }
 
-        if (c.includes('clothing')) {
+        if (lc.includes('clothing')) {
             response = "I like dark colors,makes it harder for people to see me.";
         }
 
-        if (c.includes('+')) {
+        if (lc.includes('+')) {
             response = "Get a calculator";
         }
 
-        if (c.includes('hello')) {
-            response = "hi";
+        if (Uc.includes('HEY!!!')) {
+            response = "Can you relax diaper baby!!!";
+        }
+
+        if (lc.includes('bye')) {
+            response = "Good ridance";
+        }
+
+        if (lc.includes('hello')) {
+            response = "hey...";
         }
         Slack.postMessageToChannel(channelName, response);
 
