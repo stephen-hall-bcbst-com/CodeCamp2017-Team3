@@ -66,7 +66,7 @@ module.exports = {
         } else if (array1.length == 3) { // checking proper length of input
            // checking input
            if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2])) {
-               // checking plus sign
+               // checking operations sign
                 var num1 = parseInt(array1[0]);
                 var num2 = parseInt(array1[2]);
                
@@ -81,16 +81,16 @@ module.exports = {
                 } else if (array1[1]=='^') {
                     var result = 1;
                     if (num2 != 0) {
-                        for ( var x = 0; x < num2; x++) {
-                            result *= num1;
+                    for ( var x = 0; x < num2; x++) {
+                    result *= num1;
                         }
                     }
                     response = result;
                     if (num1 == 0 && num2 == 0) {
-                        response = "Why do you waste my time with this?";
+                    response = "Why do you waste my time with this?";
                     }
                 } else if (array1[1]=='%' || array1[1]=='mod') {
-                    response = num1 % num2;
+                response = num1 % num2;
                 }
            } // NaN to different answer 
        } else if (response.toString() == "NaN") {
