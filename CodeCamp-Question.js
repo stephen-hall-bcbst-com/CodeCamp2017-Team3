@@ -84,10 +84,11 @@ module.exports = {
                         for ( var x = 0; x < num2; x++) {
                             result *= num1;
                         }
-                    } else if (num1 == 0) {
-                        response = "Why do you waste my time with this?";
                     }
                     response = result;
+                    if (num1 == 0 && num2 == 0) {
+                        response = "Why do you waste my time with this?";
+                    }
                 }
            } // NaN to different answer 
        } else if (response.toString() == "NaN") {
