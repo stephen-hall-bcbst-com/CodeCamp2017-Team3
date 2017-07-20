@@ -59,9 +59,23 @@ module.exports = {
         // holding a conversation
         } else if (lc.includes("can") && lc.includes("you") && lc.includes("conversation")) {
             response = "What do you expect? I am emo";
-        // how are you
-        } else if (lc.includes("favorite") && lc.includes("game")) {
-            response = "An empty shell of the man I once was.";
+        // gender
+        } else if (lc.includes("your") && lc.includes("gender")) {
+            response = "I'm a male.";
+        // age
+        } else if (lc.includes("old") && lc.includes("you")) {
+            response = "I was seventeen.";
+        // birthday
+        } else if (lc.includes("your") && lc.includes("birthday")) {
+            response = "I was born on Halloween at 3:00 in the morning, no joke.";
+        // weather
+        } else if (lc.includes("the") && lc.includes("weather")) {
+            response = "Mostly sunny. The high will be 96 degrees and the low will be 76.";
+        // cat or dog
+        } else if (lc.includes("cat") && lc.includes("dog") && lc.includes('person')) {
+            response = "Neither, I'm a spider person.";
+
+
         // default
         } else if (array1.length == 3) { // checking proper length of input
            // checking input
