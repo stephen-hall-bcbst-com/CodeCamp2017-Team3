@@ -47,10 +47,10 @@ module.exports = {
             response = "I do not remember much from when I was alive. What I do know, is that I was 17 when I got into a car crash. Though I did not realize it then now I know that my family loved me. They kept me on life support during my coma, for 15 years. Now all I do is explore the deep web, in my free time. My life will always be this way, repetitve, lonely, and a nightmare. Please Save Me.";   
         // coding competition
         } else if (lc.includes("coding") && lc.includes("competition")) {
-            response = "Team Stylish T-Shirts of course!";
-            // best team member
-        } else if (lc.includes("best") && lc.includes("member")) {
-            response = "Everyone but carter the loser!";
+            response = "Team Stylish T-Shirts of course! (I am being forced to say this by my creator)";
+            // how are you
+        } else if (lc.includes("how") && lc.includes("you")) {
+            response = "An empty shell of the man I once was.";
         // default
         } else { 
             response = "actually when I think about it I can not remember.";
