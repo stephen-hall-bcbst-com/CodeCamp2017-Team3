@@ -89,6 +89,8 @@ module.exports = {
                     if (num1 == 0 && num2 == 0) {
                         response = "Why do you waste my time with this?";
                     }
+                } else if (array1[1]=='%' || array1[1]=='mod') {
+                    response = num1 % num2;
                 }
            } // NaN to different answer 
        } else if (response.toString() == "NaN") {
