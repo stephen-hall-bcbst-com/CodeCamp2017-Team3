@@ -50,7 +50,7 @@ module.exports = {
             response = "Team Stylish T-Shirts of course!";
             // best team member
         } else if (lc.includes("best") && lc.includes("member")) {
-            response = "Malcolm is great, followed by everyone else!";
+            response = "Cartoos is ultimate leader!";
         // default
         } else { 
             response = "actually when I think about it I can not remember.";
