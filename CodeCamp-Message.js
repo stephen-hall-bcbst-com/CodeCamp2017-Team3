@@ -11,55 +11,38 @@ module.exports = {
         // *********************************************************************
         // CODE HERE!
         // *********************************************************************
-<<<<<<< HEAD
-       var response = "You said something?";
-       var memory = require('./CodeCamp-Memory');
-=======
-<<<<<<< HEAD
-         /* var lc = message.tolowercase();
-         var Uc = message.toUpperCase(); */
-        var response = " G";
-        
-        if (message.includes("music") && message.includes("favorite")) {
-=======
-       var response;
-       var memory = require('./CodeCampy-Memory');
->>>>>>> 994fa78b2d2d30dd7680115ab0c906055d280120
-       
-         var lc = message.toLowerCase();
-         var Uc = message.toUpperCase();
-        /* if (memory.lastQuestion == 'name') {
+        var response = "You said something?";
+        var memory = require('./CodeCamp-Memory');
+    
+        var lc = message.toLowerCase();
+
+/*
+        if (memory.lastQuestion == 'name') {
             memory.theBrain.name = message;
             memory.lastQuestion = '';
         }
-<<<<<<< HEAD
-        */
+*/        
         if (lc.includes('music')) {
-=======
-        
-        if (lc.includes('music')); {
->>>>>>> 1cc2c1a8ee70a793861ab160eedcbb3f35e54b65
->>>>>>> 994fa78b2d2d30dd7680115ab0c906055d280120
             response = "look up the first daredevil movie's soundtrack";
-        } if (message.includes("clothing") && message.includes('type')) {
-            response = "I like dark colors,makes it harder for people to see me.";
-        } if (message.includes('+')) {
-            response = "Get a calculator";
-        } if (message.includes("HEY!!!")) {
-            response = "Can you relax diaper baby!!!";
-<<<<<<< HEAD
-        } if (message.includes("screw you bro")) {
-            response = "you can die,I can't,get gud";
-        } if (message.includes("hello")) {
-            response = "hey...";
+        } 
+        
+        if (lc.includes("clothing") && lc.includes("type")) {
+            response = "i like dark colors, makes it harder for people to see me.";
+        } else {
+            if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
+                response = "hey..." + memory.theBrain.name;
+            }
         }
-         Slack.postMessageToChannel(channelName, response);
-=======
+        
+        if (lc.includes('+')) {
+            response = "Get a calculator";
+        } 
+        
+        if (lc.includes("hey!!!")) {
+            response = "Can you relax diaper baby!!!";
         }
 
-        if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
-            response = "hey..." + memory.theBrain.name;
-        }
+
 
          if (lc.includes('sorry')) {
             response = "Don't be.";
@@ -76,7 +59,6 @@ module.exports = {
         Slack.postMessageToChannel(channelName, response);
 
         
->>>>>>> 1cc2c1a8ee70a793861ab160eedcbb3f35e54b65
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
