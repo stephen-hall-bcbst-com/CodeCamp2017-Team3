@@ -54,6 +54,12 @@ module.exports = {
         // why answer
         } else if (lc.includes("why")) {
             response = "Why bother";
+        // holding a conversation
+        } else if (lc.includes("can") && lc.includes("you") && lc.includes("conversation")) {
+            response = "What do you expect? I am emo";
+        // how are you
+        } else if (lc.includes("favorite") && lc.includes("game")) {
+            response = "An empty shell of the man I once was.";
         // default
         } else { 
             response = "actually when I think about it I can not remember.";
