@@ -23,13 +23,22 @@ module.exports = {
                             'my grades',
                             'I changed my password to "incorrect". So when I got it wrong the computer would say "your password is incorrect".',
                             'At what age would it be appropiate to tell my dog, it was adopted',
+                            'What do you call a fake noodle? An impasta',
+                            'What do you call a alligator in a vest? An investigator',
+                            'What is the difference inbetween a fish and a guitar? You can not tuna fish',
+                            'How many tickles does it take to make a octopus laugh? TEN-Tickles',
+                            'What do you call a pile of kittens? A meowtain',
+                            'Why did the picture go to jail? Because it was framed',
         ];
 
-        var random = Math.floor((Math.random() * 7));
+        var random = Math.floor((Math.random() * 13));
 
         // Favorite color response
         if (lc.includes("favorite") && lc.includes("color")) {
             response = "Black the same color as everything else in my life.";
+            // Favorite color response
+        if (lc.includes("what") && lc.includes("pi")) {
+            response = "3.14159265358979323846264338327950288419716939937510...";
              // Favorite color response
         } else if (lc.includes("tell") && lc.includes("joke")) {
             response = jokesarray[random];
@@ -50,18 +59,30 @@ module.exports = {
        // }
        // console.log(add(onedashtwentyfive, onetotwentyfive));
 
-       var message = lc.replace('?', ' ');
+       var message = lc.replace('?', '');
        var array1 = message.split(" ");
 
-       if (array1.length==3) { // checking proper length of input
+       if (array1.length == 3) { // checking proper length of input
            // checking input
            if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2])) {
                // checking plus sign
+                var num1 = parseInt(array1[0]);
+                var num2 = parseInt(array1[2]);
                 if (array1[1]=='+' || array1[1]=='plus') {
-                    response = array1[0] + array1[2];
-                }
+                    response = num1 + num2;
+                } else if (array1[1]=='-' || array1[1]=='minus') {
+                    response = num1 - num2;
+                } else if (array1[1]=='*' || array1[1]=='x') {
+                    response = num1 * num2;
+                } else if (array1[1]=='/') {
+                    response = num1 / num2;
+                } 
            }
        }
+
+       if (response.toString() == "NaN") {
+           response = "Do not make my life any more miserable";
+       } 
 
     Slack.postMessageToChannel(channelName, response);
         // *********************************************************************

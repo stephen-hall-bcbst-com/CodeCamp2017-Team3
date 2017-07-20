@@ -3,6 +3,8 @@
 module.exports = {
     /**
      * @param {string} message
+     *
+     * 
      * @param {string} channelName
      * @param {string} userName
      * @param {Object} Slack
@@ -11,10 +13,14 @@ module.exports = {
         // *********************************************************************
         // CODE HERE!
         // *********************************************************************
-
-        Slack.postMessageToChannel(channelName, 'What is your problem this time child.');
-//if (c.includes('can i get some help?')) {response = "Do you need emotional support?";
-//}
+         var response;    
+        Slack.postMessageToChannel(channelName, 'Do you need emotional support?');
+         var lc = message.toLowerCase();
+    
+        if (lc.includes('can I get some help?')) { 
+          response = "Do you need emotional support?";
+        }
+    Slack.postMessageToChannel(channelName, response);
 
         // *********************************************************************
         // STOP CODING!

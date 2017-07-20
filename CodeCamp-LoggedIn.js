@@ -9,21 +9,19 @@ module.exports = {
         // *********************************************************************
         // CODE HERE!
         // *********************************************************************
+    
+        // introduction
+        Slack.postMessageToChannel(channel, "Hello, I'm T.O.M., Technical Operating Memory. ");
 
-    var newState;
-            Slack.postMessageToChannel(channel, "Hello, I'm T.O.M., Technical Operating Memory. ");
+        // pause between messages
+        setTimeout(function() {
+                Slack.postMessageToChannel(channel, "Ask me questions like, who will win this competition or what is my life story. ");
+        }, 2000);
 
-         setTimeout(function() {
-        if (newState == -1) {
-            Slack.postMessageToChannel(channel, "Ask me questions like, who will win this competition or what is my life story. ");
-        }
-    }, 300);
-        
-         setTimeout(function() {
-        if (newState == -1) {
-            Slack.postMessageToChannel(channel, "I can even tell you some jokes!");
-        }
-    }, 300);
+        // pause between messages    
+        setTimeout(function() {
+                Slack.postMessageToChannel(channel, "I can even tell you some jokes!");
+        }, 4000);
 
         // *********************************************************************
         // STOP CODING!
