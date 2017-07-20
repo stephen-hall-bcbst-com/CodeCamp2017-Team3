@@ -13,8 +13,8 @@ module.exports = {
         // *********************************************************************
 
         Slack.postMessageToChannel(channelName, 'What is your problem this time child.');
-if (c.includes('can i get some help?')) {response = {"Do you need emotional support?";
-}
+//if (c.includes('can i get some help?')) {response = "Do you need emotional support?";
+//}
 
         // *********************************************************************
         // STOP CODING!
