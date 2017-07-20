@@ -17,7 +17,7 @@ module.exports = {
         Slack.postMessageToChannel(channelName, "You said something?");
          var lc = message.tolowercase();
          var Uc = message.toUpperCase();
-        if (memory.lastquestion == 'name') {
+        if (memory.lastQuestion == 'name') {
             memory.theBrain.name = message;
             memory.lastQuestion = '';
         }
