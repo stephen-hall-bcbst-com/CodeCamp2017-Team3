@@ -73,7 +73,7 @@ module.exports = {
 
        if (array1.length == 3) { // checking proper length of input
            // checking input
-           if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2]))) {
+           if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2])) {
                // checking plus sign
                 var num1 = parseInt(array1[0]);
                 var num2 = parseInt(array1[2]);
