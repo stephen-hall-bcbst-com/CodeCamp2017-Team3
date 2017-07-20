@@ -11,27 +11,24 @@ module.exports = {
         // *********************************************************************
         // CODE HERE!
         // *********************************************************************
-       var response;
-        // Slack.postMessageToChannel(channelName, "You said something?");
-         var lc = message.tolowercase();
-         var Uc = message.toUpperCase();
-        response = " G";
+         /* var lc = message.tolowercase();
+         var Uc = message.toUpperCase(); */
+        var response = " G";
         
-        if (lc.includes("music") && lc.includes("favorite")) {
+        if (message.includes("music") && message.includes("favorite")) {
             response = "look up the first daredevil movie's soundtrack";
-        } if (lc.includes("clothing") && lc.includes('type')) {
+        } if (message.includes("clothing") && message.includes('type')) {
             response = "I like dark colors,makes it harder for people to see me.";
-        } if (lc.includes('+')) {
+        } if (message.includes('+')) {
             response = "Get a calculator";
-        } if (Uc.includes("HEY!!!")) {
+        } if (message.includes("HEY!!!")) {
             response = "Can you relax diaper baby!!!";
-        } if (lc.includes("screw you bro")) {
+        } if (message.includes("screw you bro")) {
             response = "you can die,I can't,get gud";
-        } if (lc.includes("hello")) {
+        } if (message.includes("hello")) {
             response = "hey...";
         }
          Slack.postMessageToChannel(channelName, response);
-         Slack.postMessageToChannel(channelName, "You said something?");
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
