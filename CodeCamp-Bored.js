@@ -3,7 +3,7 @@
 module.exports = {
     settings: {
         enabled: true,
-        timeoutInSeconds: 300,
+        timeoutInSeconds: 500,
     },
 
     /**
