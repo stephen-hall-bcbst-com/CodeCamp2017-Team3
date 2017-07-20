@@ -50,9 +50,6 @@ module.exports = {
         // coding competition
         } else if (lc.includes("coding") && lc.includes("competition")) {
             response = "Team Stylish T-Shirts of course! (I am being forced to say this by my creator)";
-        // how are you
-        } else if (lc.includes("how") && lc.includes("you")) {
-            response = "An empty shell of the man I once was.";
         // why answer
         } else if (lc.includes("why")) {
             response = "Why bother";
