@@ -35,7 +35,7 @@ module.exports = {
 
         // Favorite color response
         if (lc.includes("favorite") && lc.includes("color")) {
-            response = "Black the same color as everything else in my life.";
+            response = "Black, the same color as my soul.";
         // pi
         } else if (lc.includes("what") && lc.includes("pi")) {
             response = "3.14159265358979323846264338327950288419716939937510...";
