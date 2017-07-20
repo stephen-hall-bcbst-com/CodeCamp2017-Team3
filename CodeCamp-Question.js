@@ -36,10 +36,10 @@ module.exports = {
         // Favorite color response
         if (lc.includes("favorite") && lc.includes("color")) {
             response = "Black the same color as everything else in my life.";
-            // Favorite color response
+            // pi
         } else if (lc.includes("what") && lc.includes("pi")) {
             response = "3.14159265358979323846264338327950288419716939937510...";
-             // Favorite color response
+             // joke
         } else if (lc.includes("tell") && lc.includes("joke")) {
             response = jokesarray[random];
         // Life story
@@ -48,6 +48,9 @@ module.exports = {
         // coding competition
         } else if (lc.includes("coding") && lc.includes("competition")) {
             response = "Team Stylish T-Shirts of course!";
+            // best team member
+        } else if (lc.includes("best") && lc.includes("member")) {
+            response = "Malcolm is great, followed by everyone else!";
         // default
         } else { 
             response = "actually when I think about it I can not remember.";
