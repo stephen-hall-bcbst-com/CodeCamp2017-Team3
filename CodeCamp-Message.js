@@ -12,10 +12,16 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
        var response;
+       var memory = require('./CodeCampy-Memory');
+       
         Slack.postMessageToChannel(channelName, "You said something?");
          var lc = message.tolowercase();
          var Uc = message.toUpperCase();
-
+        if (memory.lastquestion == 'name') {
+            memory.theBrain.name = message;
+            memory.lastQuestion = '';
+        }
+        
         if (lc.includes('music')); {
             response = "look up the first daredevil movie's soundtrack";
         }
@@ -29,7 +35,7 @@ module.exports = {
         }
 
         if (lc.includes('hello')) {
-            response = "hey...";
+            response = "hey..." + memory.theBrain.name;
         }
         Slack.postMessageToChannel(channelName, response);
 

@@ -11,8 +11,9 @@ module.exports = {
         // *********************************************************************
     
         // introduction
-        Slack.postMessageToChannel(channel, "Hello, I'm T.O.M., Technical Operating Memory. ");
-
+        var memory = require('./CodeCamp-Memory');
+        Slack.postMessageToChannel(channel, "Hello, I'm T.O.M., Technical Operating Memory. What is your name?");
+            memory.lastQuestion = 'name';
         // pause between messages
         setTimeout(function() {
                 Slack.postMessageToChannel(channel, "Ask me questions like, who will win this competition or what is my life story. ");
