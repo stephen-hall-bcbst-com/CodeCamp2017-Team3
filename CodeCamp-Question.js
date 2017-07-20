@@ -37,7 +37,7 @@ module.exports = {
         if (lc.includes("favorite") && lc.includes("color")) {
             response = "Black the same color as everything else in my life.";
             // Favorite color response
-        if (lc.includes("what") && lc.includes("pi")) {
+        } else if (lc.includes("what") && lc.includes("pi")) {
             response = "3.14159265358979323846264338327950288419716939937510...";
              // Favorite color response
         } else if (lc.includes("tell") && lc.includes("joke")) {
@@ -54,10 +54,7 @@ module.exports = {
         }
         
 
-       // function add(part1, part2) {
-           // return part1 + part2;
-       // }
-       // console.log(add(onedashtwentyfive, onetotwentyfive));
+     
 
        var message = lc.replace('?', '');
        var array1 = message.split(" ");
@@ -90,3 +87,4 @@ module.exports = {
         // *********************************************************************
     },
 };
+

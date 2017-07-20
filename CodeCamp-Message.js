@@ -21,19 +21,11 @@ module.exports = {
         }
 
         if (lc.includes('clothing')) {
-            response = "I like dark colors,makes it harder for people to see me.";
-        }
-
-        if (lc.includes('+')) {
-            response = "Get a calculator";
+            response = "I like dark colors, makes it harder for people to see me.";
         }
 
         if (Uc.includes('HEY!!!')) {
             response = "Can you relax diaper baby!!!";
-        }
-
-        if (lc.includes('bye')) {
-            response = "Good ridance";
         }
 
         if (lc.includes('hello')) {
