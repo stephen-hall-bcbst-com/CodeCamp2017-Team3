@@ -73,10 +73,11 @@ module.exports = {
 
        if (array1.length == 3) { // checking proper length of input
            // checking input
-           if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2])) {
+           if (!Number.isNaN(array1[0]) && !Number.isNaN(array1[2]))) {
                // checking plus sign
                 var num1 = parseInt(array1[0]);
                 var num2 = parseInt(array1[2]);
+               
                 if (array1[1]=='+' || array1[1]=='plus') {
                     response = num1 + num2;
                 } else if (array1[1]=='-' || array1[1]=='minus') {
@@ -85,7 +86,15 @@ module.exports = {
                     response = num1 * num2;
                 } else if (array1[1]=='/') {
                     response = num1 / num2;
-                } 
+                } else if (array1[1]=='^') {
+                    var result = 1;
+                    if (num2 != 0) {
+                        for ( var x = 0; x < num2; x++) {
+                            result *= num1;
+                        }
+                    }
+                    response = result;
+                }
            }
        }
        // NaN to different answer
