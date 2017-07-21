@@ -32,30 +32,19 @@ module.exports = {
             if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
                 response = "hey..." + memory.theBrain.name;
             }
-        }
-        
-        if (lc.includes('+')) {
-            response = "Get a calculator";
         } 
-        
-        if (lc.includes("hey!!!")) {
-            response = "Can you relax diaper baby!!!";
+        if (lc.includes("thank") && lc.includes("you")) {
+            response = "that was the first time anyone has ever told me that";
         }
-
-
-
          if (lc.includes('sorry')) {
             response = "Don't be.";
         }
-
          if (lc.includes('shut') && lc.includes('up')) {
             response = "...";
         }
-
          if (lc.includes('hate') && lc.includes('you')) {
             response = "Lots do...";
         }
-
         Slack.postMessageToChannel(channelName, response);
 
         
