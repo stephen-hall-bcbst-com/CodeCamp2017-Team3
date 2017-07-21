@@ -15,7 +15,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
 
-        // random response
+        // random bored response
         var replies = ['It is very lonely behind the screen, you know',
                        'I need attention',
                        'Are you going to leave me too?',
