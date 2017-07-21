@@ -13,7 +13,6 @@ module.exports = {
         // *********************************************************************
         var response = "You said something?";
         var memory = require('./CodeCamp-Memory');
-    
         var lc = message.toLowerCase();
 
 /*
@@ -22,20 +21,24 @@ module.exports = {
             memory.lastQuestion = '';
         }
 */        
+        // music response
         if (lc.includes('music')) {
             response = "look up the first daredevil movie's soundtrack";
         } 
-        
+        // clothing type response
         if (lc.includes("clothing") && lc.includes("type")) {
-            response = "i like dark colors, makes it harder for people to see me.";
+            response = "I like dark colors, makes it harder for people to see me.";
         } else {
-            if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
-                response = "hey..." + memory.theBrain.name;
+        // hello response
+        if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
+            response = "hey..." + memory.theBrain.name;
             }
         } 
+        // Thank you response
         if (lc.includes("thank") && lc.includes("you")) {
             response = "that was the first time anyone has ever told me that";
         }
+        // Sorry response
          if (lc.includes('sorry')) {
             response = "Don't be.";
         }
