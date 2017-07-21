@@ -24,7 +24,7 @@ module.exports = {
             response = "Remember things you can ask me include, math problems, life story, favorite color, jokes, pi, etc.";
         // math help
         } else if (lc.includes("math")) {
-            response = "you can always ask me math questions in this format: a + b?";
+            response = "you can always ask me math questions in this format: a + b? (any operation even mod)";
         } else {
             response = 'with what?';
         }
