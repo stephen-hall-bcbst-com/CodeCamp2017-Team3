@@ -2,8 +2,8 @@
 
 module.exports = {
     settings: {
-        enabled: true,
-        timeoutInSeconds: 30,
+        enabled: false,
+        timeoutInSeconds: 500,
     },
 
     /**
@@ -15,7 +15,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
 
-        // random bored response
+        // random response
         var replies = ['It is very lonely behind the screen, you know',
                        'I need attention',
                        'Are you going to leave me too?',
@@ -25,7 +25,7 @@ module.exports = {
                        'I am getting lonely...',
                        'Am I being too clingy?',
                        'Dont look behind you...',
-                       'Hi James, your blue shirt looks nice.'];
+                       'Your *insert shirt here* looks nice ;)'];
         var random = Math.floor((Math.random() * 10));
         var response = replies[random];
         Slack.postMessageToChannel(channel, response);
