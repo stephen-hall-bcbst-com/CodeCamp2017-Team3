@@ -68,6 +68,9 @@ module.exports = {
         // cat or dog
         } else if (lc.includes("cat") && lc.includes("dog") && lc.includes('person')) {
             response = "Neither, I'm a spider person.";
+        // Questions you can ask
+        } else if (lc.includes("questions") && lc.includes("I") && lc.includes('ask')) {
+            response = "Remember you can always ask me, my favorite color, age, whether i am a cat or dog person, what is pi, math questions, jokes and many more.";
         // default
         } else if (array1.length == 3) { // checking proper length of input
            // checking input
