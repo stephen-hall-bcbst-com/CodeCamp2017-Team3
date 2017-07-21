@@ -34,7 +34,7 @@ module.exports = {
         // math help
 >>>>>>> 2872c851124da3930b1f913b3466d0aef6e4eb09
         } else if (lc.includes("math")) {
-            response = "you can always ask me math questions in this format: a + b?";
+            response = "you can always ask me math questions in this format: a + b? (any operation even mod)";
         } else {
             response = 'with what?';
         }
