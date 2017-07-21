@@ -25,7 +25,7 @@ module.exports = {
                        'I am getting lonely...',
                        'Am I being too clingy?',
                        'Dont look behind you...',
-                       'Your *insert shirt here* looks nice ;)'];
+                       'Hi James, your blue shirt looks nice.'];
         var random = Math.floor((Math.random() * 10));
         var response = replies[random];
         Slack.postMessageToChannel(channel, response);
