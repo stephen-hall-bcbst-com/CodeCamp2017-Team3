@@ -28,7 +28,7 @@ module.exports = {
         } 
         // clothing type response
         if (lc.includes("clothing") && lc.includes("type")) {
-            response = "I like dark colors," + memory.theBrain.name + ", makes it harder for people to see me.";
+            response = "I like dark colors, " + memory.theBrain.name + ", makes it harder for people to see me.";
         } else {
         // hello response
         if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
