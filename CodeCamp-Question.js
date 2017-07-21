@@ -72,7 +72,6 @@ module.exports = {
         } else if (lc.includes("cat") && lc.includes("dog") && lc.includes('person')) {
             response = "Neither, I'm a spider person.";
 
-
         // default
         } else if (array1.length == 3) { // checking proper length of input
            // checking input
