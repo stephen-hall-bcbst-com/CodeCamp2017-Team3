@@ -23,6 +23,10 @@ module.exports = {
         setTimeout(function() {
                 Slack.postMessageToChannel(channel, "I can even tell you some jokes!");
         }, 4000);
+        // pause between messages
+        setTimeout(function() {
+                Slack.postMessageToChannel(channel, "For help, just ask, help with math, or help list");
+        }, 6000);
 
         // *********************************************************************
         // STOP CODING!

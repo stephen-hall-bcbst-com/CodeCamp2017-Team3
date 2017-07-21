@@ -41,7 +41,7 @@ module.exports = {
         // pi
         } else if (lc.includes("what") && lc.includes("pi")) {
             response = "3.14159265358979323846264338327950288419716939937510...";
-        // joke
+        // jokes
         } else if (lc.includes("tell") && lc.includes("joke")) {
             response = jokesarray[random];
         // Life story
@@ -65,14 +65,9 @@ module.exports = {
         // birthday
         } else if (lc.includes("your") && lc.includes("birthday")) {
             response = "I was born on Halloween at 3:00 in the morning, no joke.";
-        // weather
-        } else if (lc.includes("the") && lc.includes("weather")) {
-            response = "Mostly sunny. The high will be 96 degrees and the low will be 76.";
         // cat or dog
         } else if (lc.includes("cat") && lc.includes("dog") && lc.includes('person')) {
             response = "Neither, I'm a spider person.";
-
-
         // default
         } else if (array1.length == 3) { // checking proper length of input
            // checking input
@@ -103,11 +98,11 @@ module.exports = {
                 } else if (array1[1]=='%' || array1[1]=='mod') {
                 response = num1 % num2;
                 }
-           } // NaN to different answer 
+           } // NaN to different response 
        } else if (response.toString() == "NaN") {
            response = "Do not make my life any more miserable";
        } else { 
-            response = "actually when I think about it I can not remember.";
+           response = "actually when I think about it I can not remember.";
        }
 
 
