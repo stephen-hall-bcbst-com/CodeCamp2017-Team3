@@ -16,7 +16,7 @@ module.exports = {
             memory.lastQuestion = 'name';
         // pause between messages
         setTimeout(function() {
-                Slack.postMessageToChannel(channel, "Ask me questions like, who will win this competition or what is my life story. ");
+                Slack.postMessageToChannel(channel, "Ask me questions like, who will win this coding competition or what is my life story. ");
         }, 2000);
 
         // pause between messages    
