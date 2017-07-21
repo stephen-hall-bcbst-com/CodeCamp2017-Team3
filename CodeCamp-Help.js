@@ -26,7 +26,7 @@ module.exports = {
         } else if (lc.includes("math")) {
             response = "you can always ask me math questions in this format: a + b?";
         } else {
-            response = 'With what?';
+            response = 'with what?';
         }
    
     Slack.postMessageToChannel(channelName, response);

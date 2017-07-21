@@ -15,19 +15,20 @@ module.exports = {
         var memory = require('./CodeCamp-Memory');
         var lc = message.toLowerCase();
 
-/*
+
         if (memory.lastQuestion == 'name') {
             memory.theBrain.name = message;
             memory.lastQuestion = '';
+            response = 'that name is okay, I guess...';
         }
-*/        
+        
         // music response
         if (lc.includes('music')) {
-            response = "look up the first daredevil movie's soundtrack";
+            response = "look up the first daredevil movie's soundtrack, " + memory.theBrain.name + ".";
         } 
         // clothing type response
         if (lc.includes("clothing") && lc.includes("type")) {
-            response = "I like dark colors, makes it harder for people to see me.";
+            response = "I like dark colors," + memory.theBrain.name + ", makes it harder for people to see me.";
         } else {
         // hello response
         if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
