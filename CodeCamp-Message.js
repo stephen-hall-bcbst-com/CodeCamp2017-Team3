@@ -11,41 +11,22 @@ module.exports = {
         // *********************************************************************
         // CODE HERE!
         // *********************************************************************
-        var response = "You said something?";
-        var memory = require('./CodeCamp-Memory');
-        var lc = message.toLowerCase();
-
-
-        if (memory.lastQuestion == 'name') {
-            memory.theBrain.name = message;
-            memory.lastQuestion = '';
-            response = 'that name is okay, I guess...';
+         /* var lc = message.tolowercase();
+         var Uc = message.toUpperCase(); */
+        var response = " G";
+        // his responses are meant to be edgy and sarcastic
+        if (message.includes("music") && message.includes("favorite")) {
+            response = "look up the first daredevil movie's soundtrack";
+        } if (message.includes("clothing") && message.includes('type')) {
+            response = "I like dark colors,makes it harder for people to see me.";
+        } if (message.includes("screw you bro")) {
+            response = "you can die,I can't,get gud";
+        } if (message.includes("hello")) {
+            response = "hey...";
+        } if (message.includes("videogames")) {
+            response = "I like games like Bloodborn,Metro:Last Light,And Detroit:Become Human,to be announced";
         }
-        
-        // music response
-        if (lc.includes('music')) {
-            response = "look up the first daredevil movie's soundtrack, " + memory.theBrain.name + ".";
-        } 
-        // clothing type response
-        if (lc.includes("clothing") && lc.includes("type")) {
-            response = "I like dark colors, " + memory.theBrain.name + ", makes it harder for people to see me.";
-        } else {
-        // hello response
-        if (lc.includes('hello') || lc.includes('hi') || lc.includes('hey')) {
-            response = "hey..." + memory.theBrain.name;
-            }
-        } 
-        // Thank you response
-        if (lc.includes("thank") && lc.includes("you")) {
-            response = "that was the first time anyone has ever told me that";
-        }
-        // Sorry response
-         if (lc.includes('sorry')) {
-            response = "Don't be.";
-        }
-        Slack.postMessageToChannel(channelName, response);
-
-        
+         Slack.postMessageToChannel(channelName, response);
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
